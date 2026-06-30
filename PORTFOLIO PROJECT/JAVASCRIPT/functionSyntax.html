@@ -1,0 +1,37 @@
+<html>
+<body>
+    <p>First number:<input type="number" id="one"></p>
+    <p>Second number:<input type="number" id="two"></p>
+    <h3 id="answer"></h3>
+    <p><button onclick="sum()">Add</button>
+    <button onclick="prod()">multiply</button>
+    <button onclick="minus()">Subtract</button></p>
+    <script>
+        let num1,num2;
+        function getinput(){
+            num1=Number(document.getElementById("one").value);
+            num2=Number(document.getElementById("two").value);
+        }
+        function add(a,b){
+            return a+b;
+        }
+        function sum(){
+            let r;
+            getinput();
+            r=add(num1,num2);
+            document.getElementById("answer").innerText="Addition:"+r;
+        }
+        
+        function prod(){
+            getinput();
+           let r=num1*num2;
+            document.getElementById("answer").innerText="multiplication:"+r;
+        }
+         function minus(){
+            getinput();
+           let r=num1-num2;
+            document.getElementById("answer").innerText="subtraction:"+r;
+         }
+</script>
+</body>
+</html>

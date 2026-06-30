@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+</head>
+<body>
+<p>Enter Age <input type="Number" id="Age"/></p>
+<p><button onclick="remark()">Decide</button></p>
+<h2 id="codeit"></h2>
+<script>
+function remark() {
+let a=Number(document.getElementById("Age").value);
+let r;
+if (a>0 && a<18) {
+r="You are under age";
+}
+else if(a>=18 && a<=24){
+r="you are qualified, welcome to NYS!"
+}
+else{
+r="Invalid Age"
+}
+document.getElementById("codeit").innerHTML="remark" +r;
+}
+</script>
+</body>
+</html>

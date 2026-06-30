@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="one"></p>
+        <p id="two"></p>
+        <script>
+            let students={
+                name:"Issa Rumba",
+                course:"computer science",
+                score:97,
+                getData: function(){
+                    return this.name+ " " +this.course+" "+this.score;
+                }
+            };
+            console.log(students.getData());
+            document.getElementById("one").innerText=students.getData();
+            document.getElementById("two").innerText=students.score;
+        </script>
+    </body>
+</html>

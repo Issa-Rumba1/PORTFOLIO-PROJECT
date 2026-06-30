@@ -1,0 +1,18 @@
+<html>
+    <body onload="GreetMe()">
+     <p onmouseover="dontTouch()">move it over</p>   
+     <p>Enter Name:<input type="text" onchange="displayMe()" id="studName">  </p>
+        <script>
+            /*function GreetMe(){
+                alert("hello Mandugu");
+            }
+            function dontTouch(){
+                alert("Usiniguse!");
+            }*/
+            function displayMe(){
+                let n=document.getElementById('studName').value;
+                alert("you entered" +n)
+            }
+        </script>
+    </body>
+</html>
